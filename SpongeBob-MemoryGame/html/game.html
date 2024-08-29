@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../css/colors.css">
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/card.css">
+    <script src="../js/game.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            lucide.createIcons();
+        })
+    </script>
+</head>
+
+<body>
+
+    <grid-center>
+        <grid-score>
+            <h1 id="score1">0</h1>
+            <h1>x</h1>
+            <h1 id="score2">0</h1>
+        </grid-score>
+    </grid-center>
+
+
+    <grid-center>
+        <turn>
+            <turn-input id="turn1">
+                <h1 id="turn">Player 1 turn</h1>
+            </turn-input>
+            <div class="slider"></div>
+            <turn-input id="turn2">
+                <h1 id="turn">Player 2 turn</h1>
+            </turn-input>
+        </turn>
+    </grid-center>
+    
+    <grid-center>
+        <grid-cards>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner1">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner1')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="" alt="Avatar" id="img1">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner2">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner2')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner3">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner3')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner4">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner4')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner5">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner5')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img5">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner6">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner6')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner7">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner7')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img7">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner8">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner8')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img8">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner9">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner9')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img9">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner10">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner10')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img10">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner11">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner11')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img11">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner12">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner12')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img12">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner13">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner13')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img13">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner14">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner14')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img14">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner15">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner15')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img15">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner16">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner16')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img16">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner17">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner17')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img17">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner18">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner18')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img18">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner19">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner19')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img19">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner20">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner20')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img20">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner21">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner21')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img21">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner22">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner22')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img22">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner23">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner23')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img23">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner24">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner24')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img24">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner25">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner25')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img25">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner26">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner26')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img26">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner27">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner27')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img27">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner28">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner28')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img28">
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner29">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner29')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img29">
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" id="flipCard">
+                <div class="flip-card-inner" id="inner30">
+                    <div id="btn" class="flip-card-front" onclick="turnCard('inner30')">
+
+                    </div>
+                    <div class="flip-card-back" id="back">
+                        <img src="../imagens/aguia.jpeg" alt="Avatar" id="img30">
+                    </div>
+                </div>
+            </div>
+
+        </grid-cards>
+    </grid-center>
+
+</body>
+
+</html>

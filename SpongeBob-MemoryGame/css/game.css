@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*{
+    font-family: Poppins, sans-serif;
+    
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url("../imagens/spongebobwpp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+button > svg{
+    stroke: white;
+}
+
+h1{
+    margin: 0;
+    font-size: 30px;
+    color:  var(--white)
+}
+
+grid-players{
+    margin: 0 5vw;
+    width: 20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(19, 0, 0, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: whitesmoke;
+    color: white;
+}
+
+grid-players:last-child{
+    text-align: left;
+}
+
+grid-score{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: whitesmoke;
+    padding: 10px;
+    
+}
+
+grid-score > h1{
+    color: black;
+}
+
+grid-center{
+    display: flex;
+    justify-content: center;
+    margin: 10px 100px;
+}
+
+turn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(10vh*6 + 10px*6);
+
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: whitesmoke;
+    padding: 10px;
+}
+
+turn-input{
+    border-radius: 10px;
+}
+
+
+turn-input > h1{
+    color: black;
+    padding: 10px;
+
+    position: relative;
+    z-index: 5;
+    transition: all 0.3s ease;
+}
+
+grid-cards{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(10vh*6 + 10px*6);
+    
+    background: rgba( 255, 255, 255, 0.3 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: whitesmoke;
+    padding: 10px;
+}
+
+grid-cards > div{
+    width: 10vh;
+    height: 10vh;
+    margin: 5px;
+    box-shadow: 0 0 5px black;
+
+    background-image: url("../imagens/spongebobcardswpp.png");  
+    background-size: 10vh 10vh;
+    outline: none;
+    border: none;
+}
+
+grid-cards > div > p{
+    padding-top: 1vh;
+}
+
+grid-cards > div:hover{
+    cursor: pointer;
+}
+
+button{
+    background-color: var(--primary);
+    outline: none;
+    border: solid var(--secondary);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+div > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    font-size: x-large;
+    color: white;
+}
+
+img{
+    height: 10vh;
+    width: 10vh;
+}
